@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Nunito sans', sans-serif;
+}
+:root{
+    --Dark-Blue: hsl(209, 23%, 22%);
+    --Very-Dark--Blue: hsl(207, 26%, 17%); 
+    --Very-Dark--Blue-1: hsl(200, 15%, 8%); 
+    --Dark-Gray: hsl(0, 0%, 52%); 
+    --Very-Light--Gray: hsl(0, 0%, 98%); 
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    width: 100%;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 4px -2px var(--Very-Dark--Blue-1);
+}
+header h1{
+    font-size: 1.2rem;
+    padding: 12px;
+}
+.container-mode{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.container-mode span{
+    font-size: 1rem;
+}
+.container-mode p{
+    font-size: 0.8rem;
+}
+.containe-search--filter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container-search form{
+    position: relative;
+    height: 40px;
+    margin: 20px;
+}
+.container-search form input{
+    width: 90%;
+    height: 40px;
+    padding-left: 60px;
+    border-radius: 8px;
+    border: 1px solid #00000030;
+    box-shadow: 1px 2px 5px -2px;
+}
+.container-search form label{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.btn-filter--country{
+    width: 180px;
+    height: 40px;
+    position: relative;
+    margin: 17px 0 0 24px;
+    padding-right: 44px;
+    background-color: white;
+    border: 1px solid #00000030;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px -2px;
+}
+.btn-filter--country::after{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+.filter-country{
+    width: 180px;
+    margin: 4px 0 0 24px;
+    padding: 20px 0 20px 20px;
+    list-style: none;
+    background-color: white;
+    border: 1px solid #00000030;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px -2px;
+}
+.filter-country li{
+    margin-bottom: 10px;
+}
+.container-country{
+    display: grid;
+    justify-content: center;
+    /*grid-template-columns: repeat(1, 1fr);*/
+    width: 80%;
+    gap: 40px;
+    margin: 60px auto 0;
+}
+.container-country article{
+    width: 250px;
+    height: 360px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 0px;
+    cursor: pointer;
+}
+.container-country article img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+}
+.article-country{
+    height: 360px;
+}
+.info-country{
+    padding: 20px 0 0 20px;
+}
+.info-country h2, 
+.detailed-country--info h2{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.info-country p, 
+.detailed-country--info p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.info-country p span, 
+.text p span{
+    font-weight: lighter;
+    margin-left: 4px;
+}
+
+/* Informacion de cada pais*/
+
+.btn-back{
+    position: relative;
+    width: 120px;
+    height: 36px;
+    font-size: medium;
+    text-align: center;
+    margin: 40px;
+    padding: 4px;
+    background-color: var(--White);
+    border: 1px solid var(--White);
+    box-shadow: 0px 0px 5px 2px var(--Dark-Gray);
+    cursor: pointer;
+}
+.btn-back span{
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    width: 10px;
+    margin-right: 16px;
+}
+
+.container-info--each_country{
+    width: 83%;
+    margin: 0 auto;
+}
+.container-info--each_country img {
+    width: 100%;
+}
+.detailed-country--info {
+    margin-top: 30px;
+}
+.detailed-country--info div{
+    margin-bottom: 40px;
+}
+.third-info h2{
+    font-weight: 600;
+}
+.btn-country{
+    width: 88px;
+    height: 30px;
+    font-size: small;
+    text-align: center;
+    margin: 6px;
+    background-color: var(--White);
+    border: 1px solid var(--White);
+    box-shadow: 0px 0px 5px 0px var(--Dark-Gray);
+}
+
+footer{
+    margin-top: 30px;
+}
+
+.inactive{
+    display: none;
+}

@@ -1,0 +1,46 @@
+.containe-search--filter{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-search form{
+    width: 400px;
+}
+.container-country{
+    grid-template-columns: repeat(4, 1fr);
+}
+.container-country article{
+    width: 240px;
+    height: 350px;
+}
+.container-info--each_country img{
+    width: 480px;
+    box-shadow: 0px 0px 2px 1px var(--Very-Dark--Blue-1);
+}
+.container-info--each_country {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btn-back{
+    left: 6%;
+}
+.detailed-country--info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+.info-country h2,
+.detailed-country--info h2{
+    grid-row: 1;
+}
+.detailed-country--info div{
+    grid-row: 2;
+}
+#third-info{
+    width: 300px;
+    grid-row: 3;
+}
+footer{
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+}

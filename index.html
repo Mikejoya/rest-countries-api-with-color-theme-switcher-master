@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/desktop.css" media="(min-width: 800px)">
+    <title>Document</title>
+</head>
+<style>
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+</style>
+<body>
+    <header>
+        <h1>Where in the world?</h1>
+        <div class="container-mode" id="dark">
+            <span class="material-symbols-outlined">
+                dark_mode
+            </span>
+            <p>Dark Mode</p>
+        </div>
+    </header>
+    <main>
+        <section class="home">
+            <section class="containe-search--filter">
+                <section class="container-search">
+                    <form id="formSearch">
+                        <input type="text" id="search" placeholder="Search for a country...">
+                    <label for="search">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </label>
+                </form>
+            </section>
+            <section class="filter">
+                <button class="btn-filter--country">Filter by Region</button>
+                <ul class="filter-country inactive">
+                    <li id="continents" data-cultural='Africa'>Africa</li>
+                    <li id="continents" data-cultural='Americas'>Americas</li>
+                    <li id="continents" data-cultural='Asia'>Asia</li>
+                    <li id="continents" data-cultural='Europe'>Europe</li>
+                    <li id="continents" data-cultural='Oceania'>Oceania</li>
+                </ul>
+            </section>
+        </section>
+        <section class="container-country">
+        <!--
+            <article class="article-country" >
+                <img src="https://flagcdn.com/w320/co.png" alt="">
+                <div class="info-country">
+                    <h2>Colombia</h2>
+                    <p>Population:<span>81.777.000</span></p>
+                    <p>Region:<span>America</span></p>
+                    <p>Capital:<span>Bogotá</span></p>
+                </div>
+            </article>-->
+        </section>
+    </section>
+    <section class="countryes inactive">
+        <button id="btn-back--home" class="btn-back"><span class="material-symbols-outlined">
+            arrow_back
+        </span> &nbsp;  Back</button>
+        <section class="container-info--each_country">
+            <!--
+                <img src="https://flagcdn.com/co.svg" alt="">
+                    <article class="detailed-country--info">
+                    <h2>Colombia</h2>
+                    <div class="first-info text">
+                        <p>Native name:<span>Colombia</span></p>
+                        <p>Population:<span>80.000.33</span></p>
+                        <p>Region:<span>America</span></p>
+                        <p>Sub Region:<span>Sur America</span></p>
+                        <p>Capital:<span>Bogotá</span></p>
+                    </div>
+                    <div class="second-info text">
+                        <p>Top Level Domain:<span>be</span></p>
+                        <p>Currencies:<span>Peso</span></p>
+                        <p>Lanquages: <span>Español</span></p>
+                    </div>
+                    <div class="third-info">
+                        <h2>Border Countries:</h2>
+                        <button class="btn-country">Venezuela</button>
+                        <button class="btn-country">Ecuador</button>
+                        <button class="btn-country">brasil</button>
+                    </div>
+                </article>-->
+        </section>
+    </section>
+    </main>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.instagram.com/joya_michael/">Mike Joya</a>.
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+</html>
