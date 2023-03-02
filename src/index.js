@@ -35,7 +35,7 @@ darkMode.addEventListener('click', ()=> {
 
 async function fetchCountries(){
     try{
-        const response = await fetch('../data/data.json');
+        const response = await fetch('https://mikejoya.github.io/rest-countries-api-with-color-theme-switcher-master/data/data.json');
         const data = await response.json();
         console.log(data[0].borders);
         return data;
