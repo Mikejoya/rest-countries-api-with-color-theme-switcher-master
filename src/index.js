@@ -35,7 +35,7 @@ darkMode.addEventListener('click', ()=> {
 
 async function fetchCountries(){
     try{
-        const response = await fetch('../data.json')
+        const response = await fetch('../data/data.json');
         const data = await response.json();
         console.log(data[0].borders);
         return data;
